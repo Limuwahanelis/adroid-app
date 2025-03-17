@@ -75,7 +75,7 @@ fun UnitConverter() {
     ) {
 
         // UI elements will be stacked below each other
-        Text("Unit Converter")
+        Text("Unit Converter",style = MaterialTheme.typography.headlineLarge)
         Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(value = inputValue,
             onValueChange = {
@@ -178,7 +178,10 @@ fun UnitConverter() {
 
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = "Result: $outputValue $outputUnit")
+        Text(
+            text = "Result: $outputValue $outputUnit",
+            style = MaterialTheme.typography.headlineMedium
+            )
     }
 }
 
